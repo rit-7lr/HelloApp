@@ -1,15 +1,12 @@
 package org.example;
 
-import java.util.Scanner; // Import the tool to read input
-
 public class Main{
     public static void main(String[] args) {
+        String name = "World";
+        if (args.length > 0) {
+            name = args[0];
+        }
 
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter your name: ");
-        String name = scanner.nextLine();
         System.out.println("Hello, " + name + "!");
-
-        scanner.close();
     }
 }
